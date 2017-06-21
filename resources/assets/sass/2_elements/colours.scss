@@ -1,0 +1,615 @@
+/**
+ * Everything to do with the primary colours - Main Colour Palette and Scheme.
+ *
+ * @section Colour
+ * @page Elements
+ *
+ * @example
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-primary"></div>
+ *  <div class="rk-swatch__title">primary</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-primary}</div>
+ *  <div class="rk-swatch__description">rgba(#{red($rk-colour-primary),green($rk-colour-primary),blue($rk-colour-primary)})</div>
+ * </div>
+ *
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-secondary"></div>
+ *  <div class="rk-swatch__title">secondary</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-secondary}</div>
+ *  <div class="rk-swatch__description">rgba(#{red($rk-colour-secondary),green($rk-colour-secondary),blue($rk-colour-secondary)})</div>
+ * </div>
+ *
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-tertiary"></div>
+ *  <div class="rk-swatch__title">tertiary</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-tertiary}</div>
+ *  <div class="rk-swatch__description">rgba(#{red($rk-colour-tertiary),green($rk-colour-tertiary),blue($rk-colour-tertiary)})</div>
+ * </div>
+ *
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-quaternary"></div>
+ *  <div class="rk-swatch__title">quaternary</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-quaternary}</div>
+ *  <div class="rk-swatch__description">rgba(#{red($rk-colour-quaternary),green($rk-colour-quaternary),blue($rk-colour-quaternary)})</div>
+ * </div>
+ *
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-quinary"></div>
+ *  <div class="rk-swatch__title">quinary</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-quinary}</div>
+ *  <div class="rk-swatch__description">rgba(#{red($rk-colour-quinary),green($rk-colour-quinary),blue($rk-colour-quinary)})</div>
+ * </div>
+ *
+ * @code
+ * <div class="rk-colour-primary"></div>
+ * <div class="rk-colour-secondary"></div>
+ * <div class="rk-colour-tertiary"></div>
+ * <div class="rk-colour-quaternary"></div>
+ * <div class="rk-colour-quinary"></div>
+ */
+
+.rk-colour-primary {
+  background: $rk-colour-primary;
+}
+.rk-colour-secondary {
+  background: $rk-colour-secondary;
+}
+.rk-colour-tertiary {
+  background: $rk-colour-tertiary;
+}
+.rk-colour-quaternary {
+  background: $rk-colour-quaternary;
+}
+.rk-colour-quinary {
+  background: $rk-colour-quinary;
+}
+
+/**
+ * Main Colour Gradient used for the title logo.
+ *
+ * @section Gradients
+ * @sectionof Colour
+ * @page Variables
+ *
+ * @example
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-gradient-primary"></div>
+ *  <div class="rk-swatch__title">Gradient 1</div>
+ *  <div class="rk-swatch__description">#{$rk-gradient-primary-colour-one}</div>
+ *  <div class="rk-swatch__description">#{$rk-gradient-primary-colour-two}</div>
+ *  <div class="rk-swatch__description">#{$rk-gradient-primary-colour-three}</div>
+ *  <div class="rk-swatch__description">#{$rk-gradient-primary-colour-four}</div>
+ * </div>
+ *
+ * @code
+ * <div class="rk-gradient-primary"></div>
+ */
+
+.rk-gradient-primary {
+  background: $rk-gradient-primary;
+}
+
+
+
+/**
+ * Supplemental Colours that are part of the colour scheme.
+ *
+ * @section Black & White
+ * @sectionof Colour
+ * @page Variables
+ *
+ * @example
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-white"></div>
+ *  <div class="rk-swatch__title">white</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-white}</div>
+ *  <div class="rk-swatch__description">rgba(#{red($rk-colour-white),green($rk-colour-white),blue($rk-colour-white)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-black"></div>
+ *  <div class="rk-swatch__title">black</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-black}</div>
+ *  <div class="rk-swatch__description">rgba(#{red($rk-colour-black),green($rk-colour-black),blue($rk-colour-black)})</div>
+ * </div>
+ *
+ * @code
+ * <div class="rk-colour-white"></div>
+ * <div class="rk-colour-black"></div>
+ */
+.rk-colour-white {
+  background: $rk-colour-white;
+}
+.rk-colour-black {
+  background: $rk-colour-black;
+}
+
+/**
+ * Greyscale. (Calculated from $rk-colour-white value).
+ *
+ * @section Calculated Greyscale
+ * @sectionof Colour
+ * @page Variables
+ *
+ * @example
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_5"></div>
+ *  <div class="rk-swatch__title">Grey 5%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_5}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_5),green($rk-colour-grey_5),blue($rk-colour-grey_5)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_10"></div>
+ *  <div class="rk-swatch__title">Grey 10%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_10}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_10),green($rk-colour-grey_10),blue($rk-colour-grey_10)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_15"></div>
+ *  <div class="rk-swatch__title">Grey 15%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_15}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_15),green($rk-colour-grey_15),blue($rk-colour-grey_15)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_20"></div>
+ *  <div class="rk-swatch__title">Grey 20%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_20}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_20),green($rk-colour-grey_10),blue($rk-colour-grey_10)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_25"></div>
+ *  <div class="rk-swatch__title">Grey 25%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_25}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_25),green($rk-colour-grey_25),blue($rk-colour-grey_25)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_30"></div>
+ *  <div class="rk-swatch__title">Grey 30%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_30}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_30),green($rk-colour-grey_30),blue($rk-colour-grey_30)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_35"></div>
+ *  <div class="rk-swatch__title">Grey 35%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_35}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_35),green($rk-colour-grey_35),blue($rk-colour-grey_35)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_40"></div>
+ *  <div class="rk-swatch__title">Grey 40%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_40}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_40),green($rk-colour-grey_40),blue($rk-colour-grey_40)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_45"></div>
+ *  <div class="rk-swatch__title">Grey 45%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_45}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_45),green($rk-colour-grey_45),blue($rk-colour-grey_45)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_50"></div>
+ *  <div class="rk-swatch__title">Grey 50%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_50}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_50),green($rk-colour-grey_50),blue($rk-colour-grey_50)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_55"></div>
+ *  <div class="rk-swatch__title">Grey 55%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_55}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_55),green($rk-colour-grey_55),blue($rk-colour-grey_55)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_60"></div>
+ *  <div class="rk-swatch__title">Grey 60%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_60}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_60),green($rk-colour-grey_60),blue($rk-colour-grey_60)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_65"></div>
+ *  <div class="rk-swatch__title">Grey 65%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_65}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_65),green($rk-colour-grey_65),blue($rk-colour-grey_65)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_70"></div>
+ *  <div class="rk-swatch__title">Grey 70%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_70}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_70),green($rk-colour-grey_70),blue($rk-colour-grey_70)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_75"></div>
+ *  <div class="rk-swatch__title">Grey 75%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_75}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_75),green($rk-colour-grey_75),blue($rk-colour-grey_75)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_80"></div>
+ *  <div class="rk-swatch__title">Grey 80%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_80}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_80),green($rk-colour-grey_80),blue($rk-colour-grey_80)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_85"></div>
+ *  <div class="rk-swatch__title">Grey 85%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_85}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_85),green($rk-colour-grey_85),blue($rk-colour-grey_85)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_90"></div>
+ *  <div class="rk-swatch__title">Grey 90%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_90}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_90),green($rk-colour-grey_90),blue($rk-colour-grey_90)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_95"></div>
+ *  <div class="rk-swatch__title">Grey 95%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_95}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_95),green($rk-colour-grey_95),blue($rk-colour-grey_95)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-grey_100"></div>
+ *  <div class="rk-swatch__title">Grey 100%</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-grey_100}</div>
+ *  <div class="rk-swatch__description">rgb(#{red($rk-colour-grey_100),green($rk-colour-grey_100),blue($rk-colour-grey_100)})</div>
+ * </div>
+ *
+ * @code
+ * <div class="rk-colour-grey_5"></div>
+ * <div class="rk-colour-grey_10"></div>
+ * <div class="rk-colour-grey_15"></div>
+ * <div class="rk-colour-grey_20"></div>
+ * <div class="rk-colour-grey_25"></div>
+ * <div class="rk-colour-grey_30"></div>
+ * <div class="rk-colour-grey_35"></div>
+ * <div class="rk-colour-grey_40"></div>
+ * <div class="rk-colour-grey_45"></div>
+ * <div class="rk-colour-grey_50"></div>
+ * <div class="rk-colour-grey_55"></div>
+ * <div class="rk-colour-grey_60"></div>
+ * <div class="rk-colour-grey_65"></div>
+ * <div class="rk-colour-grey_70"></div>
+ * <div class="rk-colour-grey_75"></div>
+ * <div class="rk-colour-grey_80"></div>
+ * <div class="rk-colour-grey_85"></div>
+ * <div class="rk-colour-grey_90"></div>
+ * <div class="rk-colour-grey_95"></div>
+ * <div class="rk-colour-grey_100"></div>
+ *
+ */
+.rk-colour-grey_5 {
+  background: $rk-colour-grey_5;
+}
+.rk-colour-grey_10 {
+  background: $rk-colour-grey_10;
+}
+.rk-colour-grey_15 {
+  background: $rk-colour-grey_15;
+}
+.rk-colour-grey_20 {
+  background: $rk-colour-grey_20;
+}
+.rk-colour-grey_25 {
+  background: $rk-colour-grey_25;
+}
+.rk-colour-grey_30 {
+  background: $rk-colour-grey_30;
+}
+.rk-colour-grey_35 {
+  background: $rk-colour-grey_35;
+}
+.rk-colour-grey_40 {
+  background: $rk-colour-grey_40;
+}
+.rk-colour-grey_45 {
+  background: $rk-colour-grey_45;
+}
+.rk-colour-grey_50 {
+  background: $rk-colour-grey_50;
+}
+.rk-colour-grey_55 {
+  background: $rk-colour-grey_55;
+}
+.rk-colour-grey_60 {
+  background: $rk-colour-grey_60;
+}
+.rk-colour-grey_65 {
+  background: $rk-colour-grey_65;
+}
+.rk-colour-grey_70 {
+  background: $rk-colour-grey_70;
+}
+.rk-colour-grey_75 {
+  background: $rk-colour-grey_75;
+}
+.rk-colour-grey_80 {
+  background: $rk-colour-grey_80;
+}
+.rk-colour-grey_85 {
+  background: $rk-colour-grey_85;
+}
+.rk-colour-grey_90 {
+  background: $rk-colour-grey_90;
+}
+.rk-colour-grey_95 {
+  background: $rk-colour-grey_95;
+}
+.rk-colour-grey_100 {
+  background: $rk-colour-grey_100;
+}
+
+/**
+ * Calculated Light / Dark versions of the primary colour scheme
+ *
+ * @section Calculated Light / Dark
+ * @sectionof Colour
+ * @page Variables
+ *
+ * @example
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-primary_split"></div>
+ *  <div class="rk-swatch__title">#{$rk-colour-primary}</div>
+ *  <div class="rk-swatch__description">Light : #{$rk-colour-primary-light}</div>
+ *  <div class="rk-swatch__description">Dark : #{$rk-colour-primary-dark}</div>
+ * </div>
+ *
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-secondary_split"></div>
+ *  <div class="rk-swatch__title">#{$rk-colour-secondary}</div>
+ *  <div class="rk-swatch__description">Light : #{$rk-colour-secondary-light}</div>
+ *  <div class="rk-swatch__description">Dark : #{$rk-colour-secondary-dark}</div>
+ * </div>
+ *
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-tertiary_split"></div>
+ *  <div class="rk-swatch__title">#{$rk-colour-tertiary}</div>
+ *  <div class="rk-swatch__description">Light : #{$rk-colour-tertiary-light}</div>
+ *  <div class="rk-swatch__description">Dark : #{$rk-colour-tertiary-dark}</div>
+ * </div>
+ *
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-quaternary_split"></div>
+ *  <div class="rk-swatch__title">#{$rk-colour-quaternary}</div>
+ *  <div class="rk-swatch__description">Light : #{$rk-colour-quaternary-light}</div>
+ *  <div class="rk-swatch__description">Dark : #{$rk-colour-quaternary-dark}</div>
+ * </div>
+ *
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-quinary_split"></div>
+ *  <div class="rk-swatch__title">#{$rk-colour-quinary}</div>
+ *  <div class="rk-swatch__description">Light : #{$rk-colour-quinary-light}</div>
+ *  <div class="rk-swatch__description">Dark : #{$rk-colour-quinary-dark}</div>
+ * </div>
+ *
+ * @code
+ * <div class="rk-colour-primary_split"></div>
+ * <div class="rk-colour-secondary_split"></div>
+ * <div class="rk-colour-tertiary_split"></div>
+ * <div class="rk-colour-quaternary_split"></div>
+ * <div class="rk-colour-quinary_split"></div>
+ *
+ */
+.rk-colour-primary_split {
+  background: $rk-colour-primary_split;
+}
+.rk-colour-secondary_split {
+  background: $rk-colour-secondary_split;
+}
+.rk-colour-tertiary_split {
+  background: $rk-colour-tertiary_split;
+}
+.rk-colour-quaternary_split {
+  background: $rk-colour-quaternary_split;
+}
+.rk-colour-quinary_split {
+  background: $rk-colour-quinary_split;
+}
+
+/**
+ * Calculated Gradients of the colour scheme
+ *
+ * @section Calculated Gradients
+ * @sectionof Colour
+ * @page Variables
+ *
+ * @example
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-primary_gradient"></div>
+ *  <div class="rk-swatch__title">Primary Grad</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-primary-light}</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-primary-dark}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-secondary_gradient"></div>
+ *  <div class="rk-swatch__title">Primary Grad</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-secondary-light}</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-secondary-dark}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-tertiary_gradient"></div>
+ *  <div class="rk-swatch__title">Primary Grad</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-tertiary-light}</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-tertiary-dark}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-quaternary_gradient"></div>
+ *  <div class="rk-swatch__title">Primary Grad</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-quaternary-light}</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-quaternary-dark}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-quinary_gradient"></div>
+ *  <div class="rk-swatch__title">Primary Grad</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-quinary-light}</div>
+ *  <div class="rk-swatch__description">#{$rk-colour-quinary-dark}</div>
+ * </div>
+ *
+ * @code
+ * <div class="rk-colour-primary_gradient"></div>
+ * <div class="rk-colour-secondary_gradient"></div>
+ * <div class="rk-colour-tertiary_gradient"></div>
+ * <div class="rk-colour-quaternary_gradient"></div>
+ * <div class="rk-colour-quinary_gradient"></div>
+ *
+ */
+
+.rk-colour-primary_gradient {
+  background: $rk-colour-primary_gradient;
+}
+.rk-colour-secondary_gradient {
+  background: $rk-colour-secondary_gradient;
+}
+.rk-colour-tertiary_gradient {
+  background: $rk-colour-tertiary_gradient;
+}
+.rk-colour-quaternary_gradient {
+  background: $rk-colour-quaternary_gradient;
+}
+.rk-colour-quinary_gradient {
+  background: $rk-colour-quinary_gradient;
+}
+
+
+/**
+ * System Background Colours
+ *
+ * @section System Background Colours
+ * @sectionof Colour
+ * @page Variables
+ *
+ * @example
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__background-sidebar"></div>
+ *  <div class="rk-swatch__title">Sidebar Background</div>
+ *  <div class="rk-swatch__description">#{$rk-system__background-sidebar}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__background-dotted"></div>
+ *  <div class="rk-swatch__title">Sidemenu Dotted Line</div>
+ *  <div class="rk-swatch__description">#{$rk-system__background-dotted}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__background-footer"></div>
+ *  <div class="rk-swatch__title">Sidemenu Footer</div>
+ *  <div class="rk-swatch__description">#{$rk-system__background-footer}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__background-profile"></div>
+ *  <div class="rk-swatch__title">Sidemenu Profile Bar</div>
+ *  <div class="rk-swatch__description">#{$rk-system__background-profile}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__background-setting"></div>
+ *  <div class="rk-swatch__title">Page Settings</div>
+ *  <div class="rk-swatch__description">#{$rk-system__background-setting}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__background-content"></div>
+ *  <div class="rk-swatch__title">Content</div>
+ *  <div class="rk-swatch__description">#{$rk-system__background-content}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__background-details"></div>
+ *  <div class="rk-swatch__title">Node Details</div>
+ *  <div class="rk-swatch__description">#{$rk-system__background-details}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__background-menubar"></div>
+ *  <div class="rk-swatch__title">Responsive Menubar</div>
+ *  <div class="rk-swatch__description">#{$rk-system__background-menubar}</div>
+ * </div>
+ *
+ * @code
+ * <div class="rk-system__background-sidebar"></div>
+ * <div class="rk-system__background-dotted"></div>
+ * <div class="rk-system__background-content"></div>
+ * <div class="rk-system__background-setting"></div>
+ * <div class="rk-system__background-details"></div>
+ * <div class="rk-system__background-footer"></div>
+ * <div class="rk-system__background-profile"></div>
+ * <div class="rk-system__background-menubar"></div>
+ */
+
+.rk-system__background-sidebar {
+  background: $rk-system__background-sidebar;
+}
+.rk-system__background-dotted {
+  background: $rk-system__background-dotted;
+}
+.rk-system__background-content {
+  background: $rk-system__background-content;
+}
+.rk-system__background-setting {
+  background: $rk-system__background-setting;
+}
+.rk-system__background-details {
+  background: $rk-system__background-details;
+}
+.rk-system__background-footer {
+  background: $rk-system__background-footer;
+}
+.rk-system__background-profile {
+  background: $rk-system__background-profile;
+}
+.rk-system__background-menubar {
+  background: $rk-system__background-menubar;
+}
+
+/**
+ * System Main Alert Colours
+ *
+ * @section System Alert Colours
+ * @sectionof Colour
+ * @page Variables
+ *
+ * @example
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__colour-success"></div>
+ *  <div class="rk-swatch__title">System Success</div>
+ *  <div class="rk-swatch__description">#{$rk-system__colour-success}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__colour-info"></div>
+ *  <div class="rk-swatch__title">System Info</div>
+ *  <div class="rk-swatch__description">#{$rk-system__colour-info}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__colour-warn"></div>
+ *  <div class="rk-swatch__title">System Warn</div>
+ *  <div class="rk-swatch__description">#{$rk-system__colour-warn}</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-system__colour-danger"></div>
+ *  <div class="rk-swatch__title">System Danger</div>
+ *  <div class="rk-swatch__description">#{$rk-system__colour-danger}</div>
+ * </div>
+ *
+ * @code
+ * <div class="rk-system__colour-success"></div>
+ * <div class="rk-system__colour-info"></div>
+ * <div class="rk-system__colour-warn"></div>
+ * <div class="rk-system__colour-danger"></div>
+ */
+
+.rk-system__colour-success {
+  background: $rk-system__colour-success;
+}
+.rk-system__colour-info {
+  background: $rk-system__colour-info;
+}
+.rk-system__colour-warn {
+  background: $rk-system__colour-warn;
+}
+.rk-system__colour-danger {
+  background: $rk-system__colour-danger;
+}
+.rk-system__colour-success_light {
+  background: $rk-system__colour-success_light;
+}
+.rk-system__colour-info_light {
+  background: $rk-system__colour-info_light;
+}
+.rk-system__colour-warn_light {
+  background: $rk-system__colour-warn_light;
+}
+.rk-system__colour-danger_light {
+  background: $rk-system__colour-danger_light;
+}

@@ -1,0 +1,215 @@
+/**
+ * Nodes - The main grid content. Can be many different types and shapes.
+ *
+ * ## rk-results
+ * The main flexbox grid. (See Organisms)
+ *
+ * ## flexitem
+ * This is the container of the node and is the flex-item of the grid.
+ *
+ * #### flex
+ * The flexitem can both grow and shrink. It has an auto basis. See graphic below:
+ *
+ * <img src="https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg">
+ *
+ * <code>flex : 1 1; (grow = 1, shrink = 1, basis = auto)</code>
+ *
+ * ### width
+ * The width of the item is dynamically calculated depending on the width of the container.<br/>
+ *
+ * #### min-width
+ * The minimum width of the item is the following calculation:
+ *
+ * - 100% of the container. (This includes margins and padding)
+ * - Then divided by five for the maximum number of items for the width.
+ * - Minus 5px for the last item's right margin being missing.
+ *
+ * <code>min-width : calc( ((100%) / 5) - 5px );</code><br/>
+ *
+ * #### max-width
+ * The maximum width of the item is five items wide too. This can be changed to allow larger grid sizes if required.
+ * <code>max-width : calc( ((100%) / 5) - 5px );</code>
+ *
+ * ## flexcontent
+ * This is an absolute positioned box that dictates the background and the stretching of the content in it.
+ *
+ * ## image / gradient
+ * Different types of content. Images and Gradients so far.
+ *
+ * ## content
+ * This will be any text or other content on the node.
+ *
+ * @section Nodes
+ * @sectionof Content
+ * @page Features
+ *
+ * @example
+ * <div class="rk-results-item">
+ *      <div class="rk-results-item__content">
+ *          <img class="rk-results-item__image" src="img/image.png">
+ *          <div class="rk-results-item__colour-bar" style="background: rgb(72, 98, 163);"></div>
+ *          <a target="_blank" href="https://www.facebook.com/"><div class="rk-results-item__title">Facebook</div></a>
+ *          <div class="rk-results-item__date">10 days ago</div>
+ *      </div>
+ *  </div>
+ */
+
+.rk-results-item {
+
+    // Display & Positioning
+    position :              relative;
+    align-self:             flex-start;
+    flex:                   1 1;
+
+    // Box Model
+    margin:                 $rk-node__margins 0px 0px $rk-node__margins;
+    min-width :             calc( ((100%) / #{$rk-node__cols-maximised}) - #{$rk-node__margins} );
+    max-width :             calc( ((100%) / #{$rk-node__cols-maximised}) - #{$rk-node__margins} );
+    box-shadow:             $rk-shadow_lowest;
+    height:                 228px;
+    border-radius:          $rk-radius;
+
+    // Colour
+    color :                 $rk-colour-black;
+    background :            $rk-node__background;
+
+    // Other
+
+
+    // PSEUDO ELEMENT
+    &:before {
+      // Display & Positioning
+      display :           block;
+
+      // Box Model
+      padding-top :       100%; 	/* initial ratio of 1:1*/
+
+      // Other
+      content :           "";
+    }
+
+
+    /* __ELEMENT : CONTAINER
+     *
+     * A content holder for the node.
+    */
+    &__content {
+        // Display & Positioning
+        position :          absolute;
+        top :               0;
+        right :             0;
+        bottom :            0;
+        left :              0;
+        border-radius:      $rk-radius;
+    }
+
+    /* __ELEMENT : DETAILS
+     *
+     * A content holder for the text details of the result.
+    */
+    &__details {
+        // Box Model
+        width :             100%;
+        margin :            auto;
+        border-radius:      $rk-radius;
+
+        // Display & Positioning
+        position :          absolute;
+        bottom :            0;
+        left :              0;
+
+        // Colour
+        background-color:   #ffffff;
+    }
+
+
+    /* __ELEMENT : Colour Bar
+   *
+   * The coloured bar beneath the node image
+   */
+    &__colour-bar {
+        // Box model
+        height: 3px;
+    }
+
+    /* __ELEMENT : TITLE
+    *
+    * The main title of the node
+    */
+    &__title {
+        // Box model
+        margin: 20px 20px 0px 20px;
+
+        // Colour
+        color:              $rk-colour-black;
+
+        // Text
+        font-size:          $rk-fontsize_large;
+        font-weight:        bold;
+
+        // Other
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+
+
+    /* __ELEMENT : DATE
+    *
+    * The human readable date of the updated-datetime field.
+    */
+    &__date {
+        // Box model
+        margin: 5px 20px 20px 20px;
+
+        // Colour
+        color:              $rk-colour-grey-60;
+
+        // Text
+        font-size:          $rk-fontsize_small;
+
+    }
+
+    /* _MODIFIER : THIN
+     * Triggered when the Node-view sidebar is open - makes two columns instead of four.
+     */
+    &_thin {
+
+        // Box Model
+        min-width :         calc( ((100%) / #{$rk-node__cols-minimised}) - #{$rk-node__margins} );
+
+        // MEDIA QUERY : MEDIUM SCREENS - 4 COLUMNS
+        @media all and (max-width: 960px) {
+            // Box Model
+            min-width:        calc( ((100%) / #{$rk-node__cols-tablet-min}) - #{$rk-node__margins} );
+        }
+
+        // MEDIA QUERY : SMALL SCREENS - 3 COLUMNS
+        @media all and (max-width: 768px) {
+            // Box Model
+            min-width :       calc(((100%) / #{$rk-node__cols-mobile-min}) - #{$rk-node__margins});
+        }
+
+    }
+
+    // MEDIA QUERY : LARGE SCREENS - 5 COLUMNS
+    @media all and (max-width: 1280px) {
+        // Box Model
+        min-width :       calc( ((100% - 10px ) / #{$rk-node__cols-laptop-max}) - #{$rk-node__margins} );
+    }
+
+    // MEDIA QUERY : MEDIUM SCREENS - 4 COLUMNS
+    @media all and (max-width: 960px) {
+        // Box Model
+        min-width :       calc( ((100% - 10px ) / #{$rk-node__cols-tablet-max}) - #{$rk-node__margins} );
+    }
+
+    // MEDIA QUERY : SMALL SCREENS - 3 COLUMNS
+    @media all and (max-width: 768px){
+        // Box Model
+        min-width :       calc( ((100% - 10px ) / #{$rk-node__cols-mobile-max}) - #{$rk-node__margins} );
+    }
+
+}

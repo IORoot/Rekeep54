@@ -1,0 +1,34 @@
+/**
+ * MenuTabs
+ *
+ * Everything to do with the combinations of Atom components into Molecules.
+ *
+ * @section Menu Tabs
+ * @sectionof Settings
+ * @page Features
+ *
+ * @example
+ * <div class="rk-menutabs">
+ *  <button class="rk-btn"><i class="fa fa-folder-o" aria-hidden="true"></i></button>
+ *  <button class="rk-btn"><i class="fa fa-tasks" aria-hidden="true"></i></button>
+ * </div>
+ */
+
+.rk-menutabs {
+    // Box Model
+    padding:              0px;
+
+    // Colour
+    background-color:     $rk-colour-grey_75;
+
+    .rk-button {
+        padding:              3px 5px;
+        background:           transparent;
+
+        i {
+            font-size:            $rk-fontsize_large;
+            color:                $rk-colour-primary;
+        }
+    }
+
+}

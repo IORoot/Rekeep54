@@ -1,0 +1,26 @@
+/**
+ * Sidebar footerbar
+ *
+ * ???
+ *
+ * @section Footerbar
+ * @sectionof Sidemenu
+ * @page Features
+ */
+.rk-sidebar-footerbar {
+  // Display & Positioning
+  position :              relative;
+  align-self :            flex-end;
+
+  // Box Model
+  height :                32px;
+  width :                 304px;
+
+  // Colour
+  background :            $rk-system__background-footer;
+
+  // Text
+  font-size :             1.4em;
+  line-height :           32px;
+  text-align :            right;
+}

@@ -1,0 +1,49 @@
+/**
+ * Based upon the default font rules. (See Variables section).
+ *
+ * <ul>
+ *  <li>font-family: #{$rk-fontfamily}</li>
+ *  <li>font-size: #{$rk-fontsize}</li>
+ *  <li>font-weight: #{$rk-fontweight}</li>
+ *  <li>line-height: #{$rk-lineheight}</li>
+ * </ul>
+ *
+ * @section Typography
+ * @page Components
+ */
+
+/**
+ * Formatting and styles for all headers.
+ *
+ * @section Headings
+ * @sectionof Typography
+ * @page Components
+ *
+ * @example
+ * <h1>h1 Heading</h1>
+ * <p>To your stations! Come with me. Close all outboard shields! Close all outboard shields! Yes. We've captured a freighter entering the remains of the Alderaan system. It's markings match those of a ship that blasted its way out of Mos Eisley. They must be trying to return the stolen plans to the princess. She may yet be of some use to us. Unlock one-five-seven and nine. Release charges. There's no one on board, sir. According to the log, the crew abandoned ship right after takeoff. It must be a decoy, sir. Several of the escape pods have been jettisoned.</p>
+ * <h2>h2 Heading</h2>
+ * <p>To your stations! Come with me. Close all outboard shields! Close all outboard shields! Yes. We've captured a freighter entering the remains of the Alderaan system. It's markings match those of a ship that blasted its way out of Mos Eisley. They must be trying to return the stolen plans to the princess. She may yet be of some use to us. Unlock one-five-seven and nine. Release charges. There's no one on board, sir. According to the log, the crew abandoned ship right after takeoff. It must be a decoy, sir. Several of the escape pods have been jettisoned.</p>
+ * <h3>h3 Heading</h3>
+ * <p>To your stations! Come with me. Close all outboard shields! Close all outboard shields! Yes. We've captured a freighter entering the remains of the Alderaan system. It's markings match those of a ship that blasted its way out of Mos Eisley. They must be trying to return the stolen plans to the princess. She may yet be of some use to us. Unlock one-five-seven and nine. Release charges. There's no one on board, sir. According to the log, the crew abandoned ship right after takeoff. It must be a decoy, sir. Several of the escape pods have been jettisoned.</p>
+ *
+ * @code
+ * <h1>h1 Heading</h1>
+ * <h2>h2 Heading</h2>
+ * <h3>h3 Heading</h3>
+ */
+
+h1  {
+  font-size:    $rk-fontsize-xxlarge;
+}
+
+h2  {
+  font-size:    $rk-fontsize-xlarge;
+}
+
+h3  {
+  font-size:    $rk-fontsize-large;
+}
+p {
+  line-height:  $rk-lineheight;
+}

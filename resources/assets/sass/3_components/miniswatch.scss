@@ -1,0 +1,51 @@
+/**
+ * Everything to do with URLs.
+ *
+ * @section Mini Swatches
+ * @page Components
+ *
+ * @example
+ * <div class="rk-swatch-container">
+ *  <div class="rk-swatch_mini rk-colour-primary">
+ *    <span class="rk-swatch__label_mini">#{$rk-colour_primary}</span>
+ *  </div>
+ * </div>
+ */
+.rk-swatch-container {
+  // Display & Positioning
+  display:            flex;
+
+  // Box Model
+  width:              100%;
+  padding:            5px;
+
+  // Colour
+  // Text
+  // Other
+}
+
+.rk-swatch_mini {
+  // Display & Positioning
+  position:           relative;
+
+  // Box Model
+  width :             60px;
+  height:             60px;
+  border-bottom:      20px solid $rk-colour-white;
+  margin:             0px 5px 0px 0px;
+  box-shadow:         $rk-shadow_lowest;
+
+}
+
+.rk-swatch__label_mini {
+  // Display & Positioning
+  position:           absolute;
+  bottom:             -15px;
+  left:               3px;
+
+  // Text
+  color:              $rk-colour-grey_85;
+  font-size:          $rk-fontsize_small;
+  text-transform:     uppercase;
+
+}

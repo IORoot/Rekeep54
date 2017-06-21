@@ -1,0 +1,41 @@
+/**
+ * Website Node
+ *
+ * # Websitenode
+ * @section websitenodes
+ * @sectionof Content
+ * @page Features
+ */
+.rk-websitenode {
+
+    /* __ELEMENT : IMAGE
+        *
+        * The main image of the node
+        */
+    &__image {
+        // Display & Positioning
+        display:            block;
+
+        // Box Model
+        width :                     100%;
+        margin :                    auto;
+        border-top-left-radius:     $rk-radius;
+        border-top-right-radius:    $rk-radius;
+    }
+
+    /* __ELEMENT : TYPE
+    *
+    * The TYPE (Website) of the node.
+    */
+    &__type {
+        // Box model
+        margin: 5px 20px 20px 20px;
+
+        // Colour
+        color:              $rk-colour-primary;
+
+        // Text
+        font-size:          $rk-fontsize_medium;
+
+    }
+}

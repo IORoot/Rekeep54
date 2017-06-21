@@ -1,0 +1,1 @@
+<div class="rk-sitelogo"><span class="rk-sitelogo__label"><img src="/images/default/rekeep_logo.png" alt="ReKeep Logo" Title="ReKeep.com"></span></div>

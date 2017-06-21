@@ -1,0 +1,32 @@
+
+
+.rk-panel {
+
+    // Box Model
+    padding:        5px;
+    margin-bottom:  10px;
+
+}
+
+.rk-panel--label {
+
+    // Display & position
+    display: block;
+
+    // Box Model
+    padding:        3px 10px 3px 0px;
+    margin-bottom:  5px;
+
+    // Colours
+    color: $rk-colour-primary;
+;
+
+    border-bottom:  1px solid $rk-colour-lighter10;
+}
+
+.rk-panel--content {
+
+    // Colours
+    color: $rk-colour-white;
+
+}

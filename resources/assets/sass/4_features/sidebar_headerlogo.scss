@@ -1,0 +1,56 @@
+/**
+ * Sidebar Title Logo
+ *
+ * ???
+ *
+ * @section Title Logo
+ * @sectionof Sidemenu
+ * @page Features
+ */
+.rk-sitelogo{
+  // Display & Positioning
+  display :               flex;
+
+  // Box Model
+  height :                80px;
+
+  // Colour
+  color :                 $rk-colour-white;
+  background :            $rk-gradient-primary;
+  background-size :       800% 800%;
+
+  // Text
+  font-size :             2em;
+
+  // Other
+  -webkit-animation :     rk-sitelogo 300s ease infinite;
+  -moz-animation :        rk-sitelogo 300s ease infinite;
+  animation :             rk-sitelogo 300s ease infinite;
+}
+
+    @-webkit-keyframes rk-sitelogo {
+      // Other
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    @-moz-keyframes rk-sitelogo {
+      // Other
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    @keyframes rk-sitelogo {
+      // Other
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+/*
+* __MODIFIER : rk-sidebar Logo
+*/
+.rk-sitelogo__label {
+  // Box Model
+  margin :                  auto;
+}

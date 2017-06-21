@@ -1,0 +1,54 @@
+/**
+ * Mobile Menu Bar
+ *
+ * ???
+ *
+ * @section Mobile
+ * @page Features
+ */
+.rk-navbar {
+    // Display & Positioning
+    display:                none;
+
+    // Box Model
+    width:                  100vw;
+    height:                 32px;
+
+    // Colour
+    background:             $rk-system__background-menubar;
+
+    // Text
+    font-size:              2.4em;
+
+    /*
+     * __ELEMENT : rk-navbar Hamburger Icon
+     * Font Awesome Icon
+    */
+    &__hamburger {
+      // Box Model
+      padding:            3px 4px 5px 6px;
+
+      // Colour
+      color:              $rk-colour-primary;
+    }
+
+    /* MEDIA QUERY : MEDIUM SCREENS
+     * Medium devices (tablets, 960px and under)
+    */
+    @media all and (max-width: 960px) {
+        // Display & Positioning
+        display:          flex;
+    }
+
+    /* MEDIA QUERY : SMALL SCREENS
+     * Extra small devices (phones, less than 768px)
+     * OFF-Canvas at this width.
+     */
+    @media all and (max-width: 768px){
+        // Display & Positioning
+        display:          flex;
+    }
+}
+
+
+

@@ -1,0 +1,64 @@
+/**
+ * Everything to do with the buttons
+ *
+ * @section Buttons
+ * @page Components
+ *
+ * @example
+ * <button class="rk-button">Default Button</button>
+ */
+
+.rk-button {
+  // Display & Positioning
+  display:              inline-block;
+
+  // Box Model
+  border-radius:        $rk-radius;
+  border:               2px solid transparent;
+  padding:              5px 15px;
+  margin:               0px;
+
+  // Colour
+  
+  // Text
+  font-size:            $rk-fontsize;
+  line-height:          $rk-lineheight;
+  text-decoration:      none;
+
+  // Other
+  outline:              none;
+
+  &:hover {
+    background-color:   $rk-colour-primary-light;
+  }
+
+  &:active {
+    background-color:   $rk-colour-primary-dark;
+    color:              $rk-colour-secondary-light;
+  }
+}
+
+/**
+ * System buttons
+ *
+ * @section System Buttons
+ * @sectionof Buttons
+ * @page Components
+ *
+ * @example
+ * <button class="rk-button rk-system__colour-success">Success Button</button>
+ * <button class="rk-button rk-system__colour-info">Info Button</button>
+ * <button class="rk-button rk-system__colour-warn">Warn Button</button>
+ * <button class="rk-button rk-system__colour-danger">Danger Button</button>
+ */
+
+/**
+ * Coloured buttons
+ *
+ * @section Coloured Buttons
+ * @sectionof Buttons
+ * @page Components
+ *
+ * @example
+ * <button class="rk-button rk-colour-primary">Primary Coloured Button</button>
+ */

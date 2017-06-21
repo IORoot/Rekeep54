@@ -1,0 +1,137 @@
+/**
+ * SASS Variables
+ *
+ * Everything to do with SCSS Variables
+ *
+ * @section SASS Variables
+ * @page Helpers
+ */
+
+/* ---------------------------------------------------------------- *\
+
+        SITE DEFINED COLOURS
+
+\* ---------------------------------------------------------------- */
+
+// Black & White
+$rk-colour-white :             #f7f7f7;
+$rk-colour-black :             #070908;
+
+// Main Colour Palette
+$rk-colour-primary :           #607d8b;
+$rk-colour-secondary :         #303841;
+$rk-colour-tertiary :          #303841;
+$rk-colour-quaternary :        #FF7C00;
+$rk-colour-quinary :           #1290B2;
+
+
+/* ---------------------------------------------------------------- *\
+
+        SITE CSS VARIABLES
+
+\* ---------------------------------------------------------------- */
+
+// Fonts
+$rk-fontfamily:                Lato, Lucida Grande, sans-serif;
+$rk-fontfamily-code:           Consolas, Monaco, Courier;
+
+$rk-fontsize:                  1.2rem;
+
+$rk-fontsize_small:            0.9rem;
+$rk-fontsize_medium:           1.4rem;
+$rk-fontsize_large:            1.8rem;
+$rk-fontsize_xlarge:           2.4rem;
+$rk-fontsize_xxlarge:          3.6rem;
+
+$rk-fontweight:                100;
+
+$rk-lineheight:                24px;
+
+// Transitions
+$rk-delay :                    0.5s;
+
+$rk-radius:                    1px;
+$rk-padding:                   10px;
+$rk-margin:                    10px;
+
+// Shadows
+$rk-shadow_lowest:             0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$rk-shadow_low:                0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$rk-shadow_medium:             0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$rk-shadow_high:               0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$rk-shadow_highest:            0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+/* ---------------------------------------------------------------- *\
+
+        SITE GRADIENTS
+
+\* ---------------------------------------------------------------- */
+
+// Logo Background Gradient Colours
+$rk-gradient-primary-colour-one :                  #000000;
+$rk-gradient-primary-colour-two :                  #111111;
+$rk-gradient-primary-colour-three :                #000000;
+$rk-gradient-primary-colour-four :                 #111111;
+
+
+/* ---------------------------------------------------------------- *\
+
+        SITE DEPTHS
+
+\* ---------------------------------------------------------------- */
+
+// Flash Messages
+$rk-zheight_flash-messages:                       10;
+
+
+
+/* ---------------------------------------------------------------- *\
+
+        SITE COLOURS
+
+\* ---------------------------------------------------------------- */
+
+// Sidebar
+$rk-system__background-sidebar:               #171c1e;
+$rk-system__background-dotted:                #ffa000;
+$rk-system__background-footer:                #111111;
+$rk-system__background-profile:               #171c1e;
+
+
+// Settings
+$rk-system__background-usermenu:              #101010;
+$rk-system__background-setting:               #202020;
+
+// Content
+$rk-system__background-content:               #e2e2e2;
+$rk-system__background-contentbar:            #151515;
+
+// Details
+$rk-system__background-details:               #171c1e;
+
+// Mobile
+$rk-system__background-menubar:               #151515;
+
+// Flash Messages
+$rk-system__colour-success:                   #27931d;
+$rk-system__colour-info:                      #1171ba;
+$rk-system__colour-warn:                      #e08f1d;
+$rk-system__colour-danger:                    #f40406;
+
+
+/* ---------------------------------------------------------------- *\
+
+   VARIABLES FOR NODES
+
+\* ---------------------------------------------------------------- */
+
+$rk-node__margins:              10px;
+$rk-node__background:           #EFEFEF;
+
+$rk-node__cols-maximised:       4;
+$rk-node__cols-minimised:       2;
+$rk-node__cols-laptop-max:      4;
+$rk-node__cols-tablet-max:      4;
+$rk-node__cols-tablet-min:      4;
+$rk-node__cols-mobile-max:      3;
+$rk-node__cols-mobile-min:      3;

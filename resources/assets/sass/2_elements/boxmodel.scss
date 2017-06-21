@@ -1,0 +1,108 @@
+/**
+ * Base Box Model rules
+ *
+ * <ul>
+ *  <li>Corner Radius: #{$rk-radius}</li>
+ *  <li>Padding: #{$rk-padding}</li>
+ *  <li>Margin: #{$rk-margin}</li>
+ * </ul>
+ *
+ * @section Box Model
+ * @page Elements
+ *
+ * @example
+ * <div class="lcss-container">
+ *    <div class="lcss-margin-box"><span class="lcss-label-margin">margin : #{$rk-margin}</span>
+ *      <div class="lcss-border-box"><span class="lcss-label-border">border-radius : #{$rk-radius}</span>
+ *        <div class="lcss-padding-box"><span class="lcss-label-padding">padding : #{$rk-padding}</span>
+ *          <div class="lcss-inner-box"><span class="lcss-label-inner">content : 200px x 200px</div></span>
+ *        </div>
+ *      </div>
+ *    </div>
+ * </div>
+ * @hideCode
+ */
+.lcss-container {
+  display:        inline-block;
+  position:       relative;
+  vertical-align: top;
+  line-height :   0;
+  text-align :    center;
+}
+
+.lcss-margin-box {
+    display:        inline-block;
+    background :    $rk-colour-tertiary_light;
+    border-radius : $rk-radius;
+    color :         $rk-colour-white;
+    vertical-align: top;
+    line-height :   0;
+    text-align :    center;
+    padding :       $rk-margin;
+    margin :        $rk-margin;
+}
+.lcss-border-box {
+  display:        inline-block;
+  background :    $rk-colour-tertiary;
+  border-radius : $rk-radius;
+  color :         $rk-colour-white;
+  vertical-align: top;
+  line-height :   0;
+  text-align :    center;
+  padding :       $rk-margin;
+  margin :        $rk-margin;
+}
+.lcss-padding-box {
+  display:        inline-block;
+  background :    $rk-colour-quaternary_light;
+  border-radius : $rk-radius;
+  vertical-align: top;
+  line-height :   0;
+  text-align :    center;
+  color :         $rk-colour-black;
+  padding :       $rk-padding;
+  margin :        $rk-margin;
+}
+.lcss-inner-box {
+    display:        block;
+    background :    $rk-colour-quaternary;
+    width :         200px;
+    height :        200px;
+    border-radius : $rk-radius;
+    text-align :    center;
+    margin :        $rk-margin;
+    padding :       $rk-padding;
+
+}
+.lcss-label {
+
+  &-margin {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    color : $rk-colour-black;
+  }
+
+  &-border {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    color : $rk-colour-black;
+  }
+
+  &-padding {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    color : $rk-colour-black;
+  }
+
+  &-inner {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    color : $rk-colour-white;
+  }
+
+
+}

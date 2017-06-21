@@ -1,0 +1,175 @@
+/**
+ * Simple alert messages
+ * Note that these alerts are absolutely positioned into the top right corner of the browser screen.
+ *
+ * @section Alerts
+ * @page Components
+ *
+ * @example
+ * <div class="lcss-alert">Default Alert here!<button type="button" class="rk-btn">&times;</button></div>
+ * <div class="lcss-alert_success">Success Alert!</div>
+ * <div class="lcss-alert_info">Info Alert!</div>
+ * <div class="lcss-alert_warn">Warn Alert!</div>
+ * <div class="lcss-alert_danger">Danger Alert!</div>
+ *
+ * @code
+ * <div class="rk-alert">Default Alert here!</div>
+ * <div class="rk-alert_success">Success Alert!</div>
+ * <div class="rk-alert_info">Info Alert!</div>
+ * <div class="rk-alert_warn">Warn Alert!</div>
+ * <div class="rk-alert_danger">Danger Alert!</div>
+ */
+.rk-alert {
+  // Display & Positioning
+  position:               absolute;
+  top:                    10px;
+  right:                  10px;
+
+  // Box Model
+  border-radius:          $rk-radius;
+  border:                 0px solid transparent;
+  margin:                 10px;
+  width:                  400px;
+  min-height:             50px;
+  padding:                10px 0px 0px 0px;
+
+  // Colour
+  background-color:       $rk-colour-primary;
+  color:                  $rk-colour-black;
+  box-shadow:             $rk-shadow_low;
+
+  // Text
+  font-size:              $rk-fontsize;
+  line-height:            $rk-lineheight;
+  text-decoration:        none;
+
+  // Other
+  z-index:                $rk-zheight_flash-messages;
+  overflow:               scroll;
+
+  &__message {
+    // Box Model
+    padding:              15px 25px;
+    margin:               10px 0px 0px 0px;
+
+    // Text
+    text-align:           center;
+    // Other
+  }
+
+  &_success {
+
+    @extend .rk-alert;
+
+    background-color:     $rk-system__colour-success;
+    color:                $rk-colour-white;
+
+  }
+
+  &_info {
+
+    @extend .rk-alert;
+
+    background-color:     $rk-system__colour-info;
+    color:                $rk-colour-white;
+
+  }
+
+  &_warn {
+
+    @extend .rk-alert;
+
+    background-color:     $rk-system__colour-warn;
+    color:                $rk-colour-white;
+
+  }
+
+  &_danger {
+
+    @extend .rk-alert;
+
+    background-color:     $rk-system__colour-danger;
+    color:                $rk-colour-white;
+
+  }
+}
+
+// Mixin
+@include alert-transition('rk-alert');
+
+.rk-alert__icon.fa {
+  // Display & Positioning
+  display:                block;
+
+  // Text
+  font-size:              $rk-fontsize-xxlarge;
+  text-align:             center;
+
+}
+
+
+/* ---------------------------------------------------------------- *\
+
+   LivingCSS Example Code
+
+\* ---------------------------------------------------------------- */
+.lcss-alert {
+  // Display & Positioning
+
+  // Box Model
+  border-radius:          $rk-radius;
+  border:                 2px solid transparent;
+  padding:                15px 25px;
+  margin:                 10px;
+  width:                  400px;
+  min-height:             20px;
+
+  // Colour
+  background-color:       $rk-colour-primary;
+  color:                  $rk-colour-black;
+
+  // Text
+  font-size:              $rk-fontsize;
+  line-height:            $rk-lineheight;
+  text-decoration:        none;
+
+  // Other
+  z-index:                $rk-zheight_flash-messages;
+  overflow:               scroll;
+
+  &_success {
+
+    @extend .lcss-alert;
+
+    background-color:     $rk-system__colour-success;
+    color:                $rk-colour-white;
+
+  }
+
+  &_info {
+
+    @extend .lcss-alert;
+
+    background-color:     $rk-system__colour-info;
+    color:                $rk-colour-white;
+
+  }
+
+  &_warn {
+
+    @extend .lcss-alert;
+
+    background-color:     $rk-system__colour-warn;
+    color:                $rk-colour-white;
+
+  }
+
+  &_danger {
+
+    @extend .lcss-alert;
+
+    background-color:     $rk-system__colour-danger;
+    color:                $rk-colour-white;
+
+  }
+}

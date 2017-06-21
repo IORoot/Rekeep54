@@ -1,0 +1,91 @@
+/**
+ * Swatch
+ *
+ * Everything to do with the combinations of Atom components into Molecules.
+ *
+ * @section Swatch
+ * @sectionof Details
+ * @page Features
+ *
+ * @example
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-primary"></div>
+ *  <div class="rk-swatch__title">Colour 1</div>
+ *  <div class="rk-swatch__description">Hex: #{$rk-colour-primary}</div>
+ *  <div class="rk-swatch__description">RGB: (#{red($rk-colour-primary),green($rk-colour-primary),blue($rk-colour-primary)})</div>
+ * </div>
+ * <div class="rk-swatch">
+ *  <div class="rk-swatch__colour rk-colour-primary-split"></div>
+ *  <div class="rk-swatch__title">#{$rk-colour-primary}</div>
+ *  <div class="rk-swatch__description">Light : #{$rk-colour-primary-light}</div>
+ *  <div class="rk-swatch__description">Dark : #{$rk-colour-primary-dark}</div>
+ * </div>
+ */
+
+.rk-swatch {
+  // Display & Positioning
+  display:                        inline-flex;
+  flex-direction:                 column;
+
+  // Box Model
+  width :                         150px;
+  margin:                         10px;
+  padding-bottom:                 5px;
+  border-radius:                  $rk-radius;
+
+  // Colour
+  background:                     $rk-colour-white;
+
+  // Text
+  text-align:                     center;
+
+  // Other
+  box-shadow:                     $rk-shadow_lowest;
+
+  &__colour {
+    // Display & Positioning
+    flex-grow:                    1;
+
+    // Box Model
+    width:                        100%;
+    height:                       150px;
+    border-top-left-radius:       $rk-radius;
+    border-top-right-radius:      $rk-radius;
+  }
+
+  &__title {
+    // Box Model
+    height:                       20px;
+    width:                        calc(100% - 10px);
+    padding:                      5px;
+
+    // Colour
+    color:                        $rk-colour-black;
+
+    // Text
+    white-space:                  nowrap;
+    text-align:                   left;
+    font-weight:                  700;
+    text-transform:               uppercase;
+
+    // Other
+    box-shadow:                   none;
+  }
+
+  &__description {
+    // Box Model
+    width:                        calc(100% - 10px);
+    height:                       20px;
+    padding:                      0px 5px 3px 5px;
+
+    // Colour
+    color:                        $rk-colour-grey_50;
+
+    // Text
+    white-space:                  nowrap ;
+    text-align:                   left;
+
+    // Other
+    box-shadow:                   none;
+  }
+}

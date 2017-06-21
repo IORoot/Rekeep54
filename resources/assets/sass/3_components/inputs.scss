@@ -1,0 +1,267 @@
+// Variables.
+
+$rk-colour-inputs__background :       rgba(0,0,0,0.1);
+
+
+
+/**
+ * Everything to do with form inputs.
+ *
+ * @section Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="text" class="rk-form__text" placeholder="Page Title">
+ */
+.rk-form__text {
+
+  // Box Model
+  width:              calc(100% - 20px);
+  padding:            10px;
+  border-width:       0px;
+  outline-width:      1px;
+  margin:             0px;
+
+  // Colour
+  background-color:   $rk-colour-inputs__background;
+  color:              $rk-colour-primary;
+  outline-color:      $rk-system__background-sidebar;
+
+  // Text
+  font-family:        $rk-fontfamily;
+  font-size:          $rk-fontsize_medium;
+
+  &:focus {
+
+    background-color:   $rk-colour-secondary;
+
+  }
+
+}
+
+/**
+ * Everything to do with Textarea.
+ *
+ * @section Textareas
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <textarea name="textarea"
+ *           class="rk-form__textarea"
+ *           rows="10"
+ *           cols="50"
+ *           placeholder="Write something here">
+ * </textarea>
+ */
+.rk-form__textarea {
+
+  // Box Model
+  width:              100%;
+  height:             200px;
+  padding:            10px;
+  border-width:       0px;
+  outline-width:      1px;
+  box-sizing:         border-box;
+
+  // Colour
+  background-color:   $rk-colour-inputs__background;
+  color:              $rk-colour-primary;
+  outline-color:      $rk-colour-grey_10;
+
+  // Text
+  font-family:        $rk-fontfamily;
+  font-size:          $rk-fontsize_medium;
+
+  // Other
+  resize:             none;
+
+  &_markdown {
+
+    @extend .rk-form__textarea;
+
+    // Box Model
+    width:              100%;
+    margin-bottom:      20px;
+
+    // Colour
+    color:              $rk-colour-white;
+    background-color:   $rk-colour-lighter10;
+
+    // Text
+    font-family:        $rk-fontfamily-code;
+  }
+
+}
+
+/**
+ * Everything to do with Checkboxes.
+ *
+ * @section Checkboxes
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="checkbox" class="rk-form__checkbox" placeholder="Tick this">
+ */
+.rk-form__checkbox {
+
+  // Colour
+  background-color:   $rk-colour-grey_70;
+
+}
+
+/**
+ * Everything to do with Radio buttons.
+ *
+ * @section Radio
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="radio" class="rk-form__radio" placeholder="Select this">
+ */
+
+/**
+ * Everything to do with Select dropdowns.
+ *
+ * @section Selects
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <select name="select">
+ *  <option value="value1">Value 1</option>
+ *  <option value="value2" selected>Value 2</option>
+ *  <option value="value3">Value 3</option>
+ * </select>
+ */
+
+/**
+ * Everything to do with Colour Selectors.
+ *
+ * @section Colour Picker
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="color" class="rk-form__colour" placeholder="Select this">
+ */
+.rk-form__colour {
+  width:    88px;
+  border:   0px;
+  padding:  0px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding:  0px;
+
+}
+input[type="color"]::-webkit-color-swatch {
+  border:   0px;
+  border-radius: $rk-radius;
+}
+
+
+/**
+ * Everything to do with selecting Files.
+ *
+ * @section Files
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="file" class="rk-form__files" placeholder="Select this">
+ */
+
+/**
+ * Everything to do with Dates and Times.
+ *
+ * @section Datetimes
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="datetime-local" class="rk-form__datetime">
+ */
+
+/**
+ * Everything to do with Emails.
+ *
+ * @section Email
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="email" class="rk-form__email" placeholder="@">
+ */
+
+/**
+ * Everything to do with Numbers.
+ *
+ * @section Numbers
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="number" class="rk-form__number">
+ */
+
+/**
+ * Everything to do with Passwords.
+ *
+ * @section Passwords
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="password" class="rk-form__password">
+ */
+
+/**
+ * Everything to do with Ranges.
+ *
+ * @section Range
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="range" class="rk-form__range" min=0 max=100 step=10>
+ */
+
+
+/**
+ * Everything to do with Time.
+ *
+ * @section Time
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="time" class="rk-form__time">
+ */
+
+
+/**
+ * Everything to do with URLs.
+ *
+ * @section URL
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="url" class="rk-form__url">
+ */
+
+
+/**
+ * Everything to do with Images.
+ *
+ * @section Image
+ * @sectionof Inputs
+ * @page Components
+ *
+ * @example
+ * <input type="image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="rk-form__image">
+  * @code
+ * <input type="image" src="googlelogo.png" class="rk-form__image">
+ */

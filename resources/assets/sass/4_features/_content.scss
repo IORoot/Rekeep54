@@ -1,0 +1,97 @@
+/**
+ * Content
+ *
+ * ???
+ *
+ * @section Content
+ * @page Features
+ */
+
+// This area contains the contentbar at the top as well as the content items.
+.rk-content {
+
+    // Display & Positioning
+    display:                flex;
+    align-items:            flex-start;
+    align-content:          flex-start;
+    flex-wrap:              wrap;
+    justify-content:        flex-start;
+
+    // Box Model
+
+    height:                 100vmin;
+    width:                  calc(100vw - 304px);
+
+    // Colour
+    background:             $rk-system__background-content;
+
+    // Other
+    overflow-y:             scroll;               /* Give scrollbars to the node list flex container. */
+
+    /*
+    * MEDIA QUERIES : MEDIUM
+    * Medium devices (tablets, 960px and under)
+    */
+    @media all and (max-width: 960px) {
+        // Display & Positioning
+        flex-basis:       100vw;
+    }
+
+    /*
+    * MEDIA QUERIES : SMALL
+    * Medium devices Extra small devices (phones, less than 768px)
+    * OFF-Canvas at this width.
+    */
+    @media all and (max-width: 768px){
+        // Display & Positioning
+        flex-basis:       100vw;
+
+        // Box Model
+        height:           100vh;
+    }
+
+}
+
+// This area contains ONLY the resulting items, without the contentbar at the top.
+.rk-results {
+
+    // Display & Positioning
+    display:                flex;
+    align-items:            flex-start;
+    align-content:          flex-start;
+    flex-wrap:              wrap;
+    justify-content:        flex-start;
+
+    // Box Model
+    padding:                0px $rk-node__margins 0px 0px;
+    height:                 calc(100vmin - 40px);
+    width:                  calc(100vw - 304px);
+
+    // Colour
+    background:             $rk-system__background-content;
+
+    // Other
+    overflow-y:             scroll;
+
+    /*
+      * MEDIA QUERIES : MEDIUM
+      * Medium devices (tablets, 960px and under)
+      */
+    @media all and (max-width: 960px) {
+      // Display & Positioning
+      flex-basis:       100vw;
+    }
+
+    /*
+    * MEDIA QUERIES : SMALL
+    * Medium devices Extra small devices (phones, less than 768px)
+    * OFF-Canvas at this width.
+    */
+    @media all and (max-width: 768px){
+      // Display & Positioning
+      flex-basis:       100vw;
+
+      // Box Model
+      height:           100vh;
+    }
+}

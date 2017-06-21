@@ -1,0 +1,52 @@
+/**
+ * Text Node
+ *
+ * # Textnode
+ * @section textnodes
+ * @sectionof Content
+ * @page Features
+ */
+.rk-textnode {
+  // Display & Positioning
+  // Box Model
+  padding:            10px;
+
+  // Colour
+  background :        $rk-colour-white;
+
+  /* __ELEMENT : DESCRIPTION
+  *
+  * The text notes of the node.
+  */
+  &__description {
+    // Display & Positioning
+    display:            block;
+
+    // Box Model
+    width :                     100%;
+    margin :                    auto;
+    border-top-left-radius:     $rk-radius;
+    border-top-right-radius:    $rk-radius;
+
+    // Text
+    font-family:                $rk-fontfamily-code;
+    font-size:                  $rk-fontsize;
+  }
+
+  /* __ELEMENT : TYPE
+  *
+  * The TYPE (Website) of the node.
+  */
+  &__type {
+    // Box model
+    margin: 5px 20px 20px 20px;
+
+    // Colour
+    color:              $rk-colour-primary;
+
+    // Text
+    font-size:          $rk-fontsize_medium;
+
+  }
+
+}

@@ -1,0 +1,21 @@
+/**
+ * Base Font rules for ReKeep
+ * <ul>
+ *  <li>font-family: #{$rk-fontfamily}</li>
+ *  <li>font-size: #{$rk-fontsize}</li>
+ *  <li>font-weight: #{$rk-fontweight}</li>
+ *  <li>line-height: #{$rk-lineheight}</li>
+ * </ul>
+ *
+ * @section Fonts
+ * @page Elements
+ *
+ * @example
+ * <p>Judge me by my size, do you?</p>
+ */
+.lcss-axample-font {
+  font-family : $rk-fontfamily;
+  font-size:    $rk-fontsize;
+  font-weight:  $rk-fontweight;
+  line-height:  $rk-lineheight;
+}

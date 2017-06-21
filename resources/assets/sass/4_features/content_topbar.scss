@@ -1,0 +1,23 @@
+/**
+ * Content Bar
+ *
+ * ???
+ *
+ * @section Content Bar
+ * @sectionof Content
+ * @page Features
+ */
+.flexcontentbar {
+  // Display & Positioning
+
+  // Box Model
+  height:                 40px;
+  width:                  calc(100vw - 304px);
+
+  // Colour
+  background:             $rk-system__background-contentbar;
+  color:                  $rk-colour-white;
+
+  // Other
+  overflow:               scroll;
+}

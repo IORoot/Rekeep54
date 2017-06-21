@@ -1,0 +1,196 @@
+/**
+ * ## Introduction
+ *
+ * The LivingCSS Style Guide is a 'live' implementation of all the CSS rules, components and layouts of the ReKeep Project.
+ * Utilising the [Straker LivingCSS](https://github.com/straker/livingcss) parser, this documentation is generated from comments within the CSS rules themselves.
+ *
+ * Comments can be written using the github flavour of Markdown formatting. Use the links below for references.
+ * - [GitHub Cheatsheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
+ * - [GitHub Markdown Basic Writing](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+ * - [GitHub Advanced Formatting](https://help.github.com/articles/working-with-advanced-formatting/)
+ *
+ * @section LivingCSS
+ * @page Principles
+ *
+ */
+
+
+
+
+
+/**
+ * Simple guidelines for using the stylesheets and naming class rules within the existing CSS framework
+ *
+ * #### Rule 1 : The Prefix
+ * All rules created must have the <code>rk-</code> prefix attached to it. This is so that when reading the compiled code, the rekeep rules can be distinguished from other libraries.
+ *
+ * <code>.rk-button</code>
+ *
+ * #### Rule 2 : Using B.E.M.
+ * Utilising the (B)lock, (E)lement & (M)odifier rules for creating classnames will help modularity and reusability.
+ * For reference links, see below:
+ * - [Yandex BEM Reference](https://en.bem.info/)
+ * - [CSS-Tricks BEM 101](https://css-tricks.com/bem-101/)
+ * - [GetBEM](http://getbem.com/introduction/)
+ *
+ *
+ * @section Class Naming
+ * @page Principles
+ */
+
+
+
+
+
+/**
+ * The block level object is a reusable, self-contained one. This means that no matter where or how you use it, it will render correctly.
+ * With this in mind, the block does not contain any rules or named references to colours or positioning since these could change depending on where and how you use that block.
+ * - Blocks can be nested and be part of each other. A menu block can be part of a header block for instance.
+ * - The block name describes its purpose ("What is it?" — menu or button), not its state ("What does it look like?" — red or big).
+ * - Blocks can use multiple words and should use single dashes - between each word.
+ * - You also shouldn't use CSS tag or ID selectors when using BEM.
+ *
+ * ###### Examples Naming:
+ *
+ * <code>rk-block-name</code>
+ *
+ * @example
+ * Good and Bad Examples of BEM Block naming.
+ *
+ *
+ * @code {css}
+ * // GOOD Block name Examples
+ * .rk-user-profile
+ * .rk-side-menu-footer-bar
+ *
+ * // Bad Block name Examples
+ * .rk-thisisasillynameandunreadable
+ * .someDiv
+ * .rk-red--button-center
+ * .rk-top-right--alert
+ *
+ * @section BEM Blocks
+ * @sectionof Class Naming
+ * @page Principles
+ */
+
+
+
+
+/**
+ * BEM Elements are objects of a block that cannot be used outside of the block. They arr closely linked to the specific block because being in any other context would not work.
+ * For example, if you have a menu block, a possible element would be a menu tab.
+ * Using the tab within the context of a menu makes sense. However, trying to use a menu tab in a different part of the website, not within the menu block just wouldn't work or make sense.
+ * Therefore, the menu tab element is tightly coupled to the block.
+ * If the section of code can't be used separately without the parent entity (the block), an element is usually created.
+ *
+ * - The element name describes its purpose ("What is this?" — item, text, etc.), not its state ("What type, or what does it look like?" — red, big, etc.).
+ * - The element is seperated from the block name with a double__underscore.
+ * - Elements can be nested within each other.
+ * - Elements are always parts of blocks, not other elements.
+ * - Not all blocks have elements.
+ *
+ * ###### Examples Naming:
+ *
+ * <code>rk-block-name__element-name</code>
+ *
+ * @example
+ * Good and Bad Examples of BEM Element naming.
+ *
+ * @code
+ * // GOOD Block & Element name Examples
+ * .rk-side-menu__menu-option
+ * .rk-footer__social-link
+ * .rk-article__title
+ *
+ * // Bad Block & Element name Examples
+ * .rk-side-menu--menu-option
+ * .rk-footer__center-red-button
+ * .rk-footer__social-media-panel__title1
+ * .rk-article__content__h1-red
+ *
+ * @section BEM Elements
+ * @sectionof Class Naming
+ * @page Principles
+ */
+
+
+
+
+/**
+ * BEM Modifiers defines the appearance, state, or behavior of a block or element.
+ * - The modifier name describes its appearance ("What size?" or "Which theme?" and so on — size_s or theme_islands), its state ("How is it different from the others?" — disabled, focused, etc.) and its behavior ("How does it behave?" or "How does it respond to the user?" — such as directions_left-top).
+ * - The modifier name is separated from the block or element name by a single underscore (_).
+ * - If the modifier is present then this means the rules will be activated, like a boolean switch.
+ * - If the modifier key-value pair is present then the modifier value is not a simple switch of two values.
+ *
+ * ###### Examples Naming:
+ *
+ * <code>rk-block-name_modifier-name</code>
+ *
+ * <code>rk-block-name__element-name_modifier-name</code>
+ *
+ * <code>rk-block-name__element-name_modifier-name_modifier-value</code>
+ *
+ * @example
+ * Good and Bad Examples of BEM Modifier naming.
+ *
+ * @code
+ * // GOOD Block & Element name Examples
+ * .rk-button_size_m        // Medium sized button
+ * .rk-button_colour_cyan   // Cyan coloured button
+ * <div class="rk-button rk-button_size_m rk-button_colour_cyan"></div>
+ *
+ * // Bad Block & Element name Examples
+ * .rk-side-menu--menu-option
+ * .rk-footer__center-red-button
+ * .rk-footer__social-media-panel__title1
+ * .rk-article__content__h1-red
+ *
+ * @section BEM Modifiers
+ * @sectionof Class Naming
+ * @page Principles
+ */
+
+
+
+
+/**
+ * All CSS Rules should contain all of their properties organised in the following categories.
+ *
+ * 1. Display & Positioning
+ * 2. Box Model
+ * 3. Colour
+ * 4. Text
+ * 5. Other
+ *
+ * Also, all property names and values should be vertically aligned in columns for maximum readibility.
+ *
+ * @section Comments
+ * @page Principles
+ *
+ * @example
+ * This is an example CSS Rule containing the required comments.
+ *
+ * @code {css}
+ * .rk-menu-tree_fullwidth {
+ * // Display & Positioning ( Display, Flex, Alignment, Position)
+ *   flex :                  0 0 304px;
+ *   align-self :            flex-start;
+ *
+ * // Box Model (Dimensions, Padding, Borders, Margins)
+ *   min-height :            calc(100vh - 80px - 40px - 20px - 20px);
+ *   padding-bottom :        20px;
+ *   margin-bottom :         0px;
+ *   padding-left :          0px;
+ *
+ * // Text (Size, Family, Style, Transforms)
+ *   font-size:              2em;
+ *
+ * // Colour (Background, Font Colour, Border-Colour)
+ *   background :            $colour-bg-sidemenu;
+ *
+ * // Other (Lists, Z-Index)
+ *   list-style :            none;
+ * }
+ */

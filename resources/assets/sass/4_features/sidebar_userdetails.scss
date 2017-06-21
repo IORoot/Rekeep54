@@ -1,0 +1,23 @@
+/**
+ * User Profile
+ *
+ * ???
+ *
+ * @section Profile
+ * @sectionof Sidemenu
+ * @page Features
+ */
+.rk-user-details {
+  // Display & Positioning
+  flex :                  0 0 304px;
+
+  // Box Model
+  padding :               15px;
+
+  // Text
+  text-align:             center;
+  font-size:              $rk-fontsize_medium;
+
+  // Colour
+  background :            $rk-system__background-profile;
+}

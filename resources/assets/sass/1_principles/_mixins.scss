@@ -1,0 +1,101 @@
+/**
+ * SASS Mixins
+ *
+ * Everything to do with SCSS Mixins
+ *
+ * @section SASS Mixins
+ * @page Helpers
+ */
+
+/**
+ * Fade Transition
+ *
+ * @section Fade Transitions
+ * @sectionof SASS Mixins
+ * @page Helpers
+ *
+ */
+
+@mixin fade-transition($class) {
+
+  #{$class}--fade-transition {
+    // Other
+    transition-property:              all;
+    transition-duration:              0.5s;
+    transition-timing-function:       ease; 
+  }
+  #{$class}--fade-transition * {
+    // Other
+    transition-property:              opacity;
+    transition-duration:              0.5s;
+    transition-timing-function:       ease;
+    transition-delay:                 0.5s;
+  }
+  #{$class}--fade-enter * {
+    // Other
+    opacity:                          0;
+    transition-delay:                 0.5s;
+  }
+  #{$class}--fade-leave * {
+    // Other
+    opacity:                          0;
+    transition-duration:              0s;
+    transition-delay:                 0s;
+  }
+}
+
+/**
+ * Alert Transition
+ *
+ * @section Alert Transitions
+ * @sectionof SASS Mixins
+ * @page Helpers
+ *
+ */
+
+@mixin alert-transition($class) {
+
+  .#{$class}--alert-transition {
+    // Other
+    transition-property:              all;
+    transition-timing-function:       ease;
+    transition-duration:              0.3s;
+  }
+
+  .#{$class}--alert-enter {
+    // Other
+    opacity:                          0;
+    transition-delay:                 0s;
+  }
+
+  .#{$class}--alert-leave {
+    // Other
+    opacity:                          0;
+    transition-duration:              2s;
+    transition-delay:                 0s;
+  }
+}
+
+
+/**
+ * Button Pseudo States
+ *
+ * @section Buttons
+ * @sectionof SASS Mixins
+ * @page Helpers
+ *
+ */
+
+@mixin rk-button($colour, $fontsize:'') {
+  @extend .rk-btn;
+  background-color: $colour;
+  font-size: unquote($fontsize);
+
+  &:hover {
+    background-color:darken($colour,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:lighten($colour,12%);
+  }
+}

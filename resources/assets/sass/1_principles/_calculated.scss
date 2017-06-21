@@ -1,0 +1,74 @@
+/* ---------------------------------------------------------------- *\
+
+        CALCULATED COLOURS & GRADIENTS
+
+\* ---------------------------------------------------------------- */
+
+$rk-gradient-primary :          linear-gradient(270deg, $rk-gradient-primary-colour-one, $rk-gradient-primary-colour-two, $rk-gradient-primary-colour-three, $rk-gradient-primary-colour-four);
+
+// Light & Dark versions of primary colour palette.
+$rk-colour-primary_light:       lighten($rk-colour-primary, 10%);
+$rk-colour-primary_dark:        darken( $rk-colour-primary, 10%);
+$rk-colour-primary_gradient:    linear-gradient(90deg, $rk-colour-primary_light, $rk-colour-primary_dark);
+$rk-colour-primary_split:       linear-gradient(to right, $rk-colour-primary_light, $rk-colour-primary_light 50%, $rk-colour-primary_dark 50%, $rk-colour-primary_dark);
+
+$rk-colour-secondary_light:     lighten($rk-colour-secondary, 10%);
+$rk-colour-secondary_dark:      darken( $rk-colour-secondary, 10%);
+$rk-colour-secondary_gradient:  linear-gradient(90deg, $rk-colour-secondary_light, $rk-colour-secondary_dark);
+$rk-colour-secondary_split:     linear-gradient(to right, $rk-colour-secondary_light, $rk-colour-secondary_light 50%, $rk-colour-secondary_dark 50%, $rk-colour-secondary_dark);
+
+$rk-colour-tertiary_light:      lighten($rk-colour-tertiary, 10%);
+$rk-colour-tertiary_dark:       darken( $rk-colour-tertiary, 10%);
+$rk-colour-tertiary_gradient:   linear-gradient(90deg, $rk-colour-tertiary_light, $rk-colour-tertiary_dark);
+$rk-colour-tertiary_split:      linear-gradient(to right, $rk-colour-tertiary_light, $rk-colour-tertiary_light 50%, $rk-colour-tertiary_dark 50%, $rk-colour-tertiary_dark);
+
+$rk-colour-quaternary_light:    lighten($rk-colour-quaternary, 10%);
+$rk-colour-quaternary_dark:     darken( $rk-colour-quaternary, 10%);
+$rk-colour-quaternary_gradient: linear-gradient(90deg, $rk-colour-quaternary_light, $rk-colour-quaternary_dark);
+$rk-colour-quaternary_split:    linear-gradient(to right, $rk-colour-quaternary_light, $rk-colour-quaternary_light 50%, $rk-colour-quaternary_dark 50%, $rk-colour-quaternary_dark);
+
+$rk-colour-quinary_light:       lighten($rk-colour-quinary, 10%);
+$rk-colour-quinary_dark:        darken( $rk-colour-quinary, 10%);
+$rk-colour-quinary_gradient:    linear-gradient(90deg, $rk-colour-quinary_light, $rk-colour-quinary_dark);
+$rk-colour-quinary_split:       linear-gradient(to right, $rk-colour-quinary_light, $rk-colour-quinary_light 50%, $rk-colour-quinary_dark 50%, $rk-colour-quinary_dark);
+
+
+// Greyscale
+$rk-colour-grey_5:              darken($rk-colour-white, 5%);
+$rk-colour-grey_10:             darken($rk-colour-white, 10%);
+$rk-colour-grey_15:             darken($rk-colour-white, 15%);
+$rk-colour-grey_20:             darken($rk-colour-white, 20%);
+$rk-colour-grey_25:             darken($rk-colour-white, 25%);
+$rk-colour-grey_30:             darken($rk-colour-white, 30%);
+$rk-colour-grey_35:             darken($rk-colour-white, 35%);
+$rk-colour-grey_40:             darken($rk-colour-white, 40%);
+$rk-colour-grey_45:             darken($rk-colour-white, 45%);
+$rk-colour-grey_50:             darken($rk-colour-white, 50%);
+$rk-colour-grey_55:             darken($rk-colour-white, 55%);
+$rk-colour-grey_60:             darken($rk-colour-white, 60%);
+$rk-colour-grey_65:             darken($rk-colour-white, 65%);
+$rk-colour-grey_70:             darken($rk-colour-white, 70%);
+$rk-colour-grey_75:             darken($rk-colour-white, 75%);
+$rk-colour-grey_80:             darken($rk-colour-white, 80%);
+$rk-colour-grey_85:             darken($rk-colour-white, 85%);
+$rk-colour-grey_90:             darken($rk-colour-white, 90%);
+$rk-colour-grey_95:             darken($rk-colour-white, 95%);
+$rk-colour-grey_100:            darken($rk-colour-white, 100%);
+
+
+// Darker and lighter
+$rk-colour-darker10 :       rgba(0,0,0,0.1);
+$rk-colour-lighter10 :      rgba(255,255,255,0.1);
+
+/* ---------------------------------------------------------------- *\
+
+        SITE COLOURS
+
+\* ---------------------------------------------------------------- */
+
+// Flash Messages
+$rk-system__colour-success_light:        lighten($rk-system__colour-success, 10%);
+$rk-system__colour-info_light:           lighten($rk-system__colour-info, 10%);
+$rk-system__colour-warn_light:           lighten($rk-system__colour-warn, 10%);
+$rk-system__colour-danger_light:         lighten($rk-system__colour-danger, 10%);
+

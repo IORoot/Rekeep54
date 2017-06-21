@@ -1,0 +1,34 @@
+/**
+ * Dashboard layout
+ *
+ * ???
+ *
+ * @section Dashboard
+ * @page Layouts
+ */
+.rk-layout {
+    // Display & Positioning
+    display:                flex;
+
+    // Box Model
+    width:                  100vw;
+    height:                 100vh;
+
+    /* MEDIA QUERY : MEDIUM SCREEN
+     * Medium devices (tablets, 960px and under)
+    */
+    @media all and (max-width: 960px) {
+        // Box Model
+        height:           calc(100vh - 32px);
+    }
+
+    /* MEDIA QUERY : SMALL SCREEN
+     * Extra small devices (phones, less than 768px)
+     * OFF-Canvas at this width.
+     */
+    @media all and (max-width: 768px){
+        // Box Model
+        height:           calc(100vh - 32px);
+    }
+}
+

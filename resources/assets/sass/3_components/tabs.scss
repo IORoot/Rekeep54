@@ -1,0 +1,82 @@
+// Variables.
+
+$rk-colour-inputs__background :       rgba(0,0,0,0.1);
+
+/**
+ * Website Node Details Tab-Panel
+ *
+ * ???
+ *
+ * @section Details
+ * @page Features
+ */
+
+.rk-tabs {
+
+    // Display & Positioning
+    width:              100%;
+    padding:            0px;
+    margin:             0px 0px 0px 0px;
+
+
+    // Box Model
+    background: $rk-colour-darker10;
+
+    // Colour
+    // Other
+
+    ul {
+        // Display & Positioning
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+
+        // Box Model
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        // Display & Positioning
+        flex-grow: 1;
+
+        // Box Model
+        text-align: center;
+
+        a {
+            // Display & Positioning
+            display: block;
+
+            // Box Model
+            padding:5px;
+
+            // Colour
+            color:      $rk-colour-white;
+
+            &:hover {
+
+                background: $rk-colour-lighter10;
+
+            }
+
+            &.is-active {
+
+                //
+                color: $rk-colour-quaternary;
+                background: $rk-colour-lighter10;
+            }
+        }
+
+    }
+
+}
+
+.rk-tab {
+    // Display & Positioning
+
+    // Box Model
+    padding: 10px 3px 3px 3px;
+
+    // Colour
+    background: $rk-colour-lighter10;
+}

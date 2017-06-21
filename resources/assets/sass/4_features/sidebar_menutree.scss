@@ -1,0 +1,245 @@
+/**
+ * Sidebar Menutree
+ *
+ * ???
+ *
+ * @section MenuTree
+ * @sectionof Sidemenu
+ * @page Features
+ */
+.rk-menutree {
+  // Display & Positioning
+  flex :                  0 0 304px;
+  align-self :            flex-start;
+
+  // Box Model
+  min-height :            calc(100vh - 80px - 51px - 20px - 40px);
+  padding-bottom :        20px;
+  margin-bottom :         0px;
+  padding-left :          0px;
+
+  // Text
+  font-size :             $rk-fontsize-medium;
+
+  // Colour
+  background :            $rk-system__background-sidebar;
+
+  // Other
+  list-style :            none;
+
+
+      /*
+      * __ELEMENT : LIST ITEM
+      *
+      * Menu item that INCLUDES all child items
+      */
+      &__list-item {
+
+        // Display & Positioning
+        position :              relative;
+
+        // Box Model
+        margin :                0;
+        padding :               0 0 0 1.5em;                                  /* indentation + .5em */
+
+        // Colour
+        color :                 $rk-colour-white;
+
+        // Text
+        line-height :           2.5em;
+
+      }
+
+      /*
+      * __ELEMENT : MENU ITEM
+      *
+      * Singular menu item that EXCLUDES all child items
+      * Targets the individual list item itself only.
+      */
+      &__menu-item {
+
+          // :PSEUDO ELEMENT
+          &:hover {
+            // Colour
+            background : $rk-colour-grey-80;
+          }
+
+          // :PSEUDO ELEMENT
+          &:active {
+            // Colour
+            background : $rk-colour-tertiary;
+          }
+
+          // _MODIFIER : If item is current folder
+          &_current-folder {
+            // Colour
+            background :            $rk-colour-secondary;
+          }
+
+      }
+
+      /*
+      * __ELEMENT : SUB-MENU
+      *
+      * A nested child menu of the parent menu
+      */
+      &__sub-menu {
+          // Display & Positioning
+          position :              relative;
+
+          // Box Model
+          margin :                0 0 0 0.5em;                                        /* indentation */
+          padding :0;
+
+          // Other
+          list-style :            none;
+
+          // :PSEUDO ELEMENT
+          &:before {
+              // Display & Positioning
+              display :               block;
+              position :              absolute;
+              top :                   0;
+              bottom :                0;
+              left :                  0;
+
+              // Box Model
+              width :                 0;
+              border-left :           1px dotted $rk-system__background-dotted;
+
+              // Other
+              content :               "";
+          }
+
+          /*
+           * NESTED BLOCK
+           *
+           * A List-item (INCLUDES all child elements) that is part of a sub-menu.
+           * I.e. This is not a root list item.
+          */
+          .rk-menutree__list-item {
+
+              // :PSEUDO ELEMENT
+              &:before {
+
+                   // Display & Positioning
+                   display :               block;
+                   position :              absolute;
+                   top :                   1.25em;                                                 /* (line-height/2) */
+                   left :                  0;
+
+                   // Box Model
+                   width :                 10px;                                                   /* same with indentation */
+                   height :                0;
+                   border-top :            1px dotted $rk-system__background-dotted;
+                   margin-top :            -1px;                                                   /* border top width */
+
+                   // Other
+                   content :               "";
+              }
+
+              // :PSEUDO ELEMENT - Last item of the list-items.
+              &:last-child {
+
+                // :PSEUDO ELEMENT
+                  &:before {
+
+                      // Display & Positioning
+                      top :                   1em;                                                    /* (line-height/2) */
+                      bottom :                0;
+
+                      // Box Model
+                      height :                auto;
+
+                      // Colour
+                      background :            $rk-system__background-sidebar;                                        /* same with body background */
+
+                  }
+              }
+          }
+      }
+
+      /*
+      * __ELEMENT : MENU ICON
+      */
+      &__menu-icon {
+        // Colour
+        font-size :             $rk-fontsize-medium;
+      }
+
+      /*
+       * __ELEMENT : MENU TITLE
+      */
+      &__menu-title {
+
+          &:hover {
+            // Colour
+            color :                 $rk-colour-quaternary;
+          }
+
+          // _MODIFIER : If item has child items
+          &_is-folder {
+            // Colour
+            color :                 $rk-colour-white;
+
+            // Text
+            font-weight :           bold;
+          }
+
+          // _MODIFIER : If item is current one
+          &_is-current {
+            // Colour
+            color :                 $rk-colour-primary;
+
+            // Text
+            text-decoration :       underline;
+          }
+
+      }
+
+      /*
+      * __ELEMENT : SETTINGS ICON
+      */
+      &__settings-icon {
+        // Display & Positioning
+        position :              absolute;
+        right :                 22px;
+
+        // Box Model
+        margin-top :            5px;
+        padding :               2px 4px;
+        border-radius :         10px;
+
+        // Colour
+        color :                 $rk-colour-primary;
+
+        // Text
+        line-height :           14px;
+        font-size :             1.2em;
+      }
+
+      /*
+      * __ELEMENT : DRAG AND DROP ICON
+      */
+      &__drag-icon {
+        // Display & Positioning
+        position :              absolute;
+
+        // Box Model
+        right :                 6px;
+        padding :               2px 4px;
+        margin-top :            5px;
+        border-radius :         10px;
+
+        // Colour
+        color :                 $rk-colour-white;
+
+        // Text
+        line-height :           14px;
+        font-size :             1.2em;
+      }
+
+}
+
+
+

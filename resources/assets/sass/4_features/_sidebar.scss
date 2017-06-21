@@ -1,0 +1,68 @@
+/**
+ * Sidebar
+ *
+ * ???
+ *
+ * @section Sidemenu
+ * @page Features
+ */
+.rk-sidebar {
+    // Display & Positioning
+    flex-shrink :           0;
+    flex-grow :             0;
+
+    // Box Model
+    width :                 304px;
+    box-shadow:             $rk-shadow_medium;
+
+    // Colour
+    background :            $rk-system__background-sidebar;
+    color :                 $rk-colour-white;
+
+    // Other
+    z-index :               2;                                           /* Make sure it overlays everything else. */
+    cursor :                pointer;
+
+
+    /* MEDIA QUERY : Small Screens
+       * Extra small devices (phones, less than 768px)
+       * OFF-Canvas at this width.
+       */
+    @media all and (max-width: 768px){
+
+      // Display & Positioning
+      display :         block;
+      position :        absolute;
+    }
+
+    /* MEDIA QUERY : Medium Screens
+    * Medium devices (tablets, 960px and under)
+    */
+    @media all and (max-width: 960px) {
+
+        // Display & Positioning
+        display :         block;
+        position :        absolute;
+        top :             32px;
+
+        // Box Model
+        height :          calc(100vh - 32px);
+    }
+
+    /* -- MODIFIER : FADE TRANSITION
+    *
+    * Affect all items in the Block.
+    * Puts a delay on all items so that they do
+    * not appear until menu is fully open.
+    */
+    &--fade-transition {
+      // Other
+      transition-property :                 all;
+      transition-duration :                 $rk-delay;
+      transition-timing-function :          ease;
+    }
+
+}
+
+
+

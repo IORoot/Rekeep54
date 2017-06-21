@@ -1,0 +1,38 @@
+/**
+ * Text Node Details
+ *
+ * ???
+ *
+ * @section Details
+ * @page Features
+ */
+
+.rk-text-details {
+    // Box
+
+
+    &__title {
+
+        // Text
+        font-size:      $rk-fontsize-xlarge;
+
+    }
+
+    &__markdown {
+
+        // Box Model
+        width:          100%;
+        margin-bottom:  20px;
+
+        // Colour
+        background:     none;
+    }
+}
+
+
+
+
+
+
+
+

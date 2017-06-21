@@ -1,0 +1,122 @@
+/**
+ * Details
+ *
+ * ???
+ *
+ * @section Details
+ * @page Features
+ */
+
+.rk-details {
+    // Display & Positioning
+    position:               relative;
+    flex-shrink:            0;
+
+    // Box Model
+    width:                  calc(((100vw - 304px) / 100) * 40);
+    box-shadow:             $rk-shadow_highest;
+
+    // Colour
+    color:                  $rk-colour-white;
+    background:             $rk-system__background-details;
+
+    // Other
+    z-index:                1;
+    overflow-y:             scroll;
+
+    /* __ELEMENT : NODE DETAILS CLOSE BOX
+     *
+    */
+    &__close-box {
+      // Display & Positioning
+      position:         absolute;
+      left:            10px;
+      top:              0px;
+
+      // Box Model
+      padding:            5px;
+
+      // Colour
+      background:         $rk-colour-grey_20;
+    }
+
+    &__container {
+      margin:             10px;
+    }
+
+    /*
+    * __ELEMENT : IMAGE
+    */
+    &__image {
+      // Box Model
+      width :             100%;
+      margin :            0px;
+      box-shadow:         $rk-shadow_lowest;
+    }
+
+    /*
+    * __ELEMENT : FAVICON
+    */
+    &__favicon{
+      background:             $rk-colour-white;
+      margin-right:           10px;
+      padding:                5px;
+    }
+
+    /*
+    * __ELEMENT : URL
+    */
+    &__url{
+      font-size:                $rk-fontsize_small;
+      text-decoration:          none;
+    }
+
+    /* MEDIA QUERY : MEDIUM DEVICES
+     * Medium devices (tablets, 960px and under)
+    */
+    @media all and (max-width: 960px) {
+        // Display & Positioning
+        display :         block;
+        position :        absolute;
+        top :             32px;
+
+        // Box Model
+        height :          100vh;
+        width :           320px;
+    }
+
+    /* MEDIA QUERY : SMALL DEVICES
+     * Extra small devices (phones, less than 768px)
+     * OFF-Canvas at this width.
+    */
+    @media all and (max-width: 768px){
+        // Display & Positioning
+        display:          block;
+        position:         absolute;
+    }
+
+    /* -- MODIFIER : TRANSITIONS
+     *
+     * Affect all items in the Block.
+     * Puts a delay on all items so that they do
+     * not appear until menu is fully open.
+    */
+    &--fade-enter {
+      // Box Model
+      width:            0 ;
+    }
+    &--fade-leave {
+      // Box Model
+      width:            0;
+    }
+}
+
+// Mixin
+@include fade-transition('.rk-details');
+
+
+
+
+
+
+
